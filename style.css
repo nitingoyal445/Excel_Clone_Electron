@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.menu{
+    border: 1px solid;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.menu div{
+    margin-left: 10px;
+}
+
+.menu-options{
+    border: 1px solid;
+    height: 60px;
+    display: flex;
+}
+.menu-options div{
+    margin-left: 10px;
+}
+
+.file-menu-options{
+    display: none;
+}
+
+.home-menu-options{
+    display: none;
+}
+
+.active{
+    display: flex;
+}
+
+.active-menu{
+    background: green;
+    color: gray;
+    border-radius: 9px;
+    padding: 5px;
+}
+
+.formula-input{
+    border: 1px solid;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cells{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.content{
+    height: calc(100vh - 170px);
+    /* background: lightblue; */
+    overflow: auto;
+    position: relative;
+}
+
+.top-left-cell{
+    background-color: gray;
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    z-index: 3;
+}
+.top-row{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    background: green;
+    z-index: 2;
+}
+.top-row-cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 70px;
+    text-align: center;
+}
+.left-col{
+    background: green;
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    z-index: 2;
+
+}
+.left-col-cell{
+    height: 25px;
+    width: 30px;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sheets{
+    /* border: 1px solid; */
+    height: 30px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    border: 1px solid;
+    min-height: 25px;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three{
+    display: flex;
+    align-items: center;
+}
+#font-select{
+
+}
+
+.font-styling{
+
+}
+
+#bold{
+
+}
+#underline{
+
+}
+#italic{
+
+}
+
+#font-size{
+
+}
+
+.cell-color{
+    display: flex;
+    width: 100%;
+}
+#cell-font{
+
+}
+#cell-background{
+
+}
+
+#left{
+
+}
+#center{
+
+}
+#right{
+
+}
+
+.sheet-list{
+    display: flex;
+}
+
+.sheet{
+    margin-left: 10px;
+    background: lightgreen;
+    padding: 1px;
+    border-radius: 17px;
+    border: 1.5px solid green;
+}
+
+.active-sheet{
+    background: green;
+    color: white;
+}
+.add-sheet{
+    margin-left: 10px;
+    padding: 1px;
+    border-radius: 16px;
+    border: 1px solid green;
+    background: lightgreen;
+    color: white;
+}
